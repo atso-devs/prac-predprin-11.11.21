@@ -36,3 +36,27 @@ const rObj = {
 }
 console.log('Задание 3:');
 console.log(`R'пред = ${rObj.prev}\nR'отч = ${rObj.report}`);
+console.log();
+
+
+
+const foObj = {
+    prev:  ( data.q.prev / data.fsg.prev ).toFixed(2),
+    report: ( data.q.report / data.fsg.report ).toFixed(2),
+}
+
+const feObj = {
+    prev: ( data.fsg.prev / data.q.prev ).toFixed(2),
+    report: ( data.fsg.report / data.q.report ).toFixed(2)
+}
+
+const vObj = {
+    prev: ( data.fsg.prev / data.ch.prev ).toFixed(2),
+    report: ( data.fsg.report / data.ch.report ).toFixed(2)
+}
+
+console.log('Задание 4:');
+console.log(`Фо'пред = ${foObj.prev}\nФо'отч = ${foObj.report}`);
+console.log(`Фе'пред = ${feObj.prev}\nФе'отч = ${feObj.report}`);
+console.log(`V'пред = ${vObj.prev}\nV'отч = ${vObj.report}`);
+console.log();
