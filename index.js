@@ -16,3 +16,11 @@ console.log('Задание 1:');
 console.log(`ПТ'пред = ${ptArr.prev}\nПТ'отч = ${ptArr.report}`);
 console.log(`IПт: ${ptArr.i}`);
 console.log();
+
+// task2
+const pObj = {
+    prev:  (data.d.prev-data.z.prev).toFixed(2),
+    report: (data.d.report-data.z.report).toFixed(2)
+}
+console.log('Задание 2:');
+console.log(`П'пред = ${pObj.prev}\nП'отч = ${pObj.report}`);
