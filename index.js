@@ -1,20 +1,15 @@
 const data = require('./data')
 
-function pt(q, ch) {
-    return (q/ch).toFixed(2)
-}
-
 // task 1
-const ptArr = {
-    prev: pt(data.q.prev, data.ch.prev),
-    report: pt(data.q.report, data.ch.report),
+const pt = {
+    prev: (data.q.prev / data.ch.prev).toFixed(2),
+    report: (data.q.report / data.ch.report).toFixed(2),
 }
-
-ptArr.i = (ptArr.report/ptArr.prev).toFixed(2)
+ pt.i = (pt.report / pt.prev).toFixed(2)
 
 console.log('Задание 1:');
-console.log(`ПТ'пред = ${ptArr.prev}\nПТ'отч = ${ptArr.report}`);
-console.log(`IПт: ${ptArr.i}`);
+console.log(`ПТ'пред = ${pt.prev}\nПТ'отч = ${pt.report}`);
+console.log(`IПт: ${pt.i}`);
 console.log();
 
 // task2
