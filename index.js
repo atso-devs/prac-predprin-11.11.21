@@ -60,3 +60,22 @@ console.log(`Фо'пред = ${foObj.prev}\nФо'отч = ${foObj.report}`);
 console.log(`Фе'пред = ${feObj.prev}\nФе'отч = ${feObj.report}`);
 console.log(`V'пред = ${vObj.prev}\nV'отч = ${vObj.report}`);
 console.log();
+
+// task5
+const ko = {
+    prev: (data.d.prev / data.fob.prev).toFixed(2),
+    report: (data.d.report / data.fob.report).toFixed(2)
+}
+
+// В зависимости от задания нужно изменить t
+const t = 360
+const kdl = {
+    prev: (t / ko.prev).toFixed(2),
+    report: (t / ko.report).toFixed(2) 
+}
+
+console.log('Задание 5:');
+console.log(`Ко'пред = ${ko.prev}\nКо'отч = ${ko.report}`);
+console.log(`Кдл'пред = ${kdl.prev} дней\nКдл'отч = ${kdl.report} дней`);
+console.log();
+
