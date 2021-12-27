@@ -5,3 +5,5 @@
 
 ![alt text](/data1.jpg)
 ![alt text](/data1.jpg)
+
+Выполненно только 5 заданий из 10. Задания лежат в папке /assets
